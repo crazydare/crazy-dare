@@ -30,7 +30,7 @@ function App() {
   const onClick = () => {
     setButtonIsEnabled(false);
     setResultIsReady(false);
-    const randomNumber = Math.floor(Math.random() * 6);
+    const randomNumber = Math.floor(Math.random() * 9);
     setResultNumber(randomNumber);
     console.log(`random number is ${randomNumber}`);
 
@@ -114,7 +114,7 @@ function App() {
                   <div className="code-block">
                     <code>
                       {`${resultNumber + 1}: ${getResult(resultNumber)} `}
-                      #crazy-dare https://crazydare.github.io/crazy-dare/
+                      https://crazydare.github.io/crazy-dare/
                     </code>
                   </div>
                 </motion.div>
