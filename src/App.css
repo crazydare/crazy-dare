@@ -1,0 +1,165 @@
+@import-normalize;
+
+:root {
+  --black: #12081f;
+  --white: #f6eee7;
+  --main: #034b94;
+  --accent-2: #6bd19f;
+  --accent-1: #f0b643;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  font-size: 13px;
+  background: var(--black);
+  color: var(--white);
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.wrapper {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  width: 100vw;
+  margin: 0;
+  padding: 0;
+}
+
+.App {
+  height: 100%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: auto;
+  margin: 0 auto;
+  padding: 1rem;
+  gap: 1rem;
+}
+
+.wheel {
+  margin-top: auto;
+}
+
+button {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  border-radius: 4px;
+  font-weight: 700;
+  padding: 1rem 5rem;
+  background: var(--accent-2);
+  color: var(--black);
+  border: none;
+  border-radius: 4px;
+  font-size: 1.25rem;
+  cursor: pointer;
+  order: 1;
+  margin-top: auto;
+}
+
+.dare-title {
+  margin: 0;
+}
+
+.result {
+  overflow: hidden;
+}
+
+.code-block {
+  background: var(--white);
+  color: var(--black);
+  padding: 0.5rem 0.75rem;
+  border-radius: 4px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+footer {
+  display: none;
+}
+
+footer a,
+footer a:visited,
+footer a:hover,
+footer a:active {
+  color: var(--white);
+  text-decoration: none;
+  box-sizing: border-box;
+  border-bottom: 2px solid transparent;
+}
+
+footer a:hover {
+  border-bottom: 2px solid var(--white);
+}
+
+button:disabled {
+  background: wheat;
+  cursor: not-allowed;
+}
+
+@media (min-width: 420px) {
+  body {
+    font-size: 16px;
+  }
+
+  main {
+    margin-top: 0;
+  }
+
+  .App {
+    gap: 1rem;
+    position: relative;
+    /* top: -4rem; */
+  }
+
+  .wheel {
+    margin-top: 0;
+  }
+
+  footer {
+    height: 4rem;
+    margin-top: auto;
+    margin-bottom: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background: var(--main);
+    color: var(--white) !important;
+    width: 100%;
+  }
+
+  .code-block {
+    min-height: 4rem;
+    max-width: 37rem;
+    margin-bottom: 2rem;
+  }
+
+  button {
+    width: fit-content;
+    padding: 0.75rem 1rem;
+    border-radius: 4px;
+    font-weight: 700;
+    padding: 1rem 5rem;
+    background: var(--accent-2);
+    color: var(--black);
+    border: none;
+    border-radius: 4px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    margin-top: 0;
+    order: 0;
+  }
+}
