@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/crazy-dare/static/css/main.3fc8b775.chunk.css",
-    "main.js": "/crazy-dare/static/js/main.9fcfa3f6.chunk.js",
-    "main.js.map": "/crazy-dare/static/js/main.9fcfa3f6.chunk.js.map",
+    "main.css": "/crazy-dare/static/css/main.c6681b2c.chunk.css",
+    "main.js": "/crazy-dare/static/js/main.f576242e.chunk.js",
+    "main.js.map": "/crazy-dare/static/js/main.f576242e.chunk.js.map",
     "runtime-main.js": "/crazy-dare/static/js/runtime-main.d3430540.js",
     "runtime-main.js.map": "/crazy-dare/static/js/runtime-main.d3430540.js.map",
     "static/js/2.fae68e3b.chunk.js": "/crazy-dare/static/js/2.fae68e3b.chunk.js",
@@ -10,13 +10,13 @@
     "static/js/3.4e1ea7e3.chunk.js": "/crazy-dare/static/js/3.4e1ea7e3.chunk.js",
     "static/js/3.4e1ea7e3.chunk.js.map": "/crazy-dare/static/js/3.4e1ea7e3.chunk.js.map",
     "index.html": "/crazy-dare/index.html",
-    "static/css/main.3fc8b775.chunk.css.map": "/crazy-dare/static/css/main.3fc8b775.chunk.css.map",
+    "static/css/main.c6681b2c.chunk.css.map": "/crazy-dare/static/css/main.c6681b2c.chunk.css.map",
     "static/js/2.fae68e3b.chunk.js.LICENSE.txt": "/crazy-dare/static/js/2.fae68e3b.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.d3430540.js",
     "static/js/2.fae68e3b.chunk.js",
-    "static/css/main.3fc8b775.chunk.css",
-    "static/js/main.9fcfa3f6.chunk.js"
+    "static/css/main.c6681b2c.chunk.css",
+    "static/js/main.f576242e.chunk.js"
   ]
 }
