@@ -17,7 +17,7 @@ const variants = {
 
 const scaleDown = {
   closed: { scale: 1.2, opacity: 0 },
-  open: { scale: 1, opacity: 1, transition: { duration: 2 } },
+  open: { scale: 0.8, opacity: 1, transition: { duration: 2 } },
 };
 
 function App() {
