@@ -30,7 +30,7 @@ function App() {
   const onClick = () => {
     setButtonIsEnabled(false);
     setResultIsReady(false);
-    const randomNumber = Math.floor(Math.random() * 9);
+    const randomNumber = Math.floor(Math.random() * 6);
     setResultNumber(randomNumber);
     console.log(`random number is ${randomNumber}`);
 
@@ -85,7 +85,7 @@ function App() {
                 />{" "}
               </div>
               <div className="overview">
-                <h1 className="dare-title">Crazy-Dare - January 2022</h1>
+                <h1 className="dare-title">Crazy-Dare - February 2022</h1>
                 <p>Spin the wheel and follow the instructions.</p>
               </div>
               <motion.button
