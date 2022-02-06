@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/crazy-dare/static/css/main.40ca3cf5.chunk.css",
-    "main.js": "/crazy-dare/static/js/main.5931cca0.chunk.js",
-    "main.js.map": "/crazy-dare/static/js/main.5931cca0.chunk.js.map",
+    "main.js": "/crazy-dare/static/js/main.54f89986.chunk.js",
+    "main.js.map": "/crazy-dare/static/js/main.54f89986.chunk.js.map",
     "runtime-main.js": "/crazy-dare/static/js/runtime-main.d3430540.js",
     "runtime-main.js.map": "/crazy-dare/static/js/runtime-main.d3430540.js.map",
     "static/js/2.fae68e3b.chunk.js": "/crazy-dare/static/js/2.fae68e3b.chunk.js",
@@ -17,6 +17,6 @@
     "static/js/runtime-main.d3430540.js",
     "static/js/2.fae68e3b.chunk.js",
     "static/css/main.40ca3cf5.chunk.css",
-    "static/js/main.5931cca0.chunk.js"
+    "static/js/main.54f89986.chunk.js"
   ]
 }
