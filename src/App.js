@@ -30,7 +30,7 @@ function App() {
   const onClick = () => {
     setButtonIsEnabled(false);
     setResultIsReady(false);
-    const randomNumber = Math.floor(Math.random() * 6);
+    const randomNumber = Math.floor(Math.random() * 7);
     setResultNumber(randomNumber);
     console.log(`random number is ${randomNumber}`);
 
