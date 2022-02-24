@@ -1,11 +1,13 @@
 @import-normalize;
 
 :root {
-  --black: #12081f;
-  --white: #f6eee7;
+  --black: #0a0115;
+  --white: #f9fafa;
+  --gray: #333234;
+  --cream: #f6eee7;
   --main: #034b94;
   --accent-2: #6bd19f;
-  --accent-1: #f0b643;
+  --accent-1: #dc9934;
 }
 
 * {
@@ -13,8 +15,7 @@
 }
 
 body {
-  font-family: "Inter", sans-serif;
-  font-size: 13px;
+  font-size: 14px;
   background: var(--black);
   color: var(--white);
   box-sizing: border-box;
@@ -26,12 +27,29 @@ body {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   margin: auto;
   width: 100vw;
   margin: 0;
   padding: 0;
+}
+
+header {
+  width: 100vw;
+  padding: 0 1rem;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: baseline;
+  border-bottom: 1px solid var(--white);
+}
+
+.date {
+  display: none;
 }
 
 .App {
@@ -41,15 +59,11 @@ body {
   justify-content: center;
   align-items: center;
   width: auto;
-  margin: auto;
-  margin-left:  auto;
+  margin-left: auto;
   margin-right: auto;
-  padding: 1rem;
-  gap: 1rem;
-}
-
-.wheel {
   margin-top: auto;
+  margin-bottom: auto;
+  gap: 1rem;
 }
 
 button {
@@ -58,7 +72,7 @@ button {
   border-radius: 4px;
   font-weight: 700;
   padding: 1rem 5rem;
-  background: var(--accent-2);
+  background: var(--accent-1);
   color: var(--black);
   border: none;
   border-radius: 4px;
@@ -77,10 +91,10 @@ button {
 }
 
 .code-block {
-  background: var(--white);
+  background: var(--cream);
   color: var(--black);
   padding: 0.5rem 0.75rem;
-  border-radius: 4px;
+  border-radius: 6px;
   display: flex;
   align-items: flex-start;
   justify-content: center;
@@ -112,21 +126,29 @@ button:disabled {
 
 @media (min-width: 420px) {
   body {
-    font-size: 16px;
+    font-size: 18px;
   }
 
   main {
     margin-top: 0;
   }
 
-  .App {
-    gap: 1rem;
-    position: relative;
-    /* top: -4rem; */
+  header {
+    max-width: 1024px;
+    padding: 0 2rem;
   }
 
-  .wheel {
-    margin-top: 0;
+  .header {
+    flex-direction: row;
+  }
+
+  .date {
+    display: block;
+    font-size: 1.5rem;
+  }
+
+  .App {
+    gap: 2rem;
   }
 
   footer {
@@ -137,7 +159,7 @@ button:disabled {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    background: var(--main);
+    background: var(--gray);
     color: var(--white) !important;
     width: 100%;
   }
@@ -151,13 +173,8 @@ button:disabled {
   button {
     width: fit-content;
     padding: 0.75rem 1rem;
-    border-radius: 4px;
-    font-weight: 700;
     padding: 1rem 5rem;
-    background: var(--accent-2);
-    color: var(--black);
     border: none;
-    border-radius: 4px;
     font-size: 1.5rem;
     cursor: pointer;
     margin-top: 0;
