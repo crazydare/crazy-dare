@@ -5,7 +5,7 @@ import { Wheel } from "react-custom-roulette";
 
 import { AnimatePresence, motion } from "framer-motion";
 // Data
-import { data, getResult } from "../data";
+import { data, results, textColors, backgroundColors } from "../data";
 
 const variants = {
   closed: { opacity: 0, height: 0 },
@@ -17,19 +17,38 @@ const scaleDown = {
   open: { scale: 0.9, opacity: 1, transition: { duration: 2 } },
 };
 
+const totalOptions = results.length;
+
 const WheelSection = () => {
   const [mustSpin, setMustSpin] = useState(false);
   const [resultNumber, setResultNumber] = useState();
+  const [numbers, setNumbers] = useState([]);
   const [resultIsReady, setResultIsReady] = useState(false);
   const [buttonIsEnabled, setButtonIsEnabled] = useState(true);
 
   const onClick = () => {
     setButtonIsEnabled(false);
     setResultIsReady(false);
-    const randomNumber = Math.floor(Math.random() * 7);
-    setResultNumber(randomNumber);
-    console.log(`random number is ${randomNumber}`);
 
+    const randomNumber = () => {
+      let number;
+
+      do {
+        number = Math.floor(Math.random() * 10);
+      } while (numbers.includes(number));
+
+      return number;
+    };
+
+    const newNumber = randomNumber();
+
+    if (numbers.length < 9) {
+      setNumbers((numbers) => [...numbers, newNumber]);
+    } else {
+      setNumbers([]);
+    }
+
+    setResultNumber(newNumber);
     setMustSpin(true);
   };
 
@@ -60,26 +79,10 @@ const WheelSection = () => {
               mustStartSpinning={mustSpin}
               prizeNumber={resultNumber}
               data={data}
-              backgroundColors={[
-                "#333234",
-                "#333234",
-                "#333234",
-                "#333234",
-                "#333234",
-                "#333234",
-                "#dc9934",
-              ]}
+              backgroundColors={backgroundColors}
               radiusLineColor={"#0a0115"}
               outerBorderColor={"#0a0115"}
-              textColors={[
-                "#f9fafa",
-                "#f9fafa",
-                "#f9fafa",
-                "#f9fafa",
-                "#f9fafa",
-                "#f9fafa",
-                "#12081f",
-              ]}
+              textColors={textColors}
               textDistance={80}
               onStopSpinning={onStopSpinning}
               perpendicularText={true}
@@ -104,13 +107,10 @@ const WheelSection = () => {
               animate="open"
               exit="closed"
             >
-              <p>
-                Copy and paste the following text in your platform and complete
-                the dare:
-              </p>
+              <p>Copy and paste the following text and complete the dare:</p>
               <div className="code-block">
                 <code>
-                  {`${resultNumber + 1}: ${getResult(resultNumber)} `}
+                  {`${resultNumber + 1}: ${results[resultNumber]} `}
                   https://crazydare.github.io/crazy-dare/
                 </code>
               </div>
