@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 
 //Components
 import { Wheel } from "react-custom-roulette";
+import logo from "../img/logo.svg";
 
 import { AnimatePresence, motion } from "framer-motion";
 // Data
@@ -62,7 +63,11 @@ const WheelSection = () => {
     <>
       <header>
         <div className="header">
-          <h1 className="title">Crazy Dare Game</h1>
+          <div className="logo">
+            <h1 className="title">Crazy Dare Game</h1>
+            <img src={logo} alt="" />
+          </div>
+
           <div className="date">March 22</div>
         </div>
       </header>

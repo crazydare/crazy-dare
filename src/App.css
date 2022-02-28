@@ -35,6 +35,15 @@ body {
   padding: 0;
 }
 
+.logo {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.logo img {
+  max-width: 40px;
+}
 header {
   width: 100vw;
   padding: 0 1rem;
