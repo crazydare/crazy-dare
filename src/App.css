@@ -99,6 +99,11 @@ button {
   overflow: hidden;
 }
 
+.result span {
+  font-weight: 700;
+  color: var(--accent-1);
+}
+
 .code-block {
   background: var(--cream);
   color: var(--black);

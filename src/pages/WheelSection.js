@@ -18,8 +18,6 @@ const scaleDown = {
   open: { scale: 0.9, opacity: 1, transition: { duration: 2 } },
 };
 
-const totalOptions = results.length;
-
 const WheelSection = () => {
   const [mustSpin, setMustSpin] = useState(false);
   const [resultNumber, setResultNumber] = useState();
@@ -68,7 +66,7 @@ const WheelSection = () => {
             <img src={logo} alt="" />
           </div>
 
-          <div className="date">March 22</div>
+          <div className="date">April 22</div>
         </div>
       </header>
 
@@ -113,12 +111,16 @@ const WheelSection = () => {
               exit="closed"
             >
               <p>Copy and paste the following text and complete the dare:</p>
+
               <div className="code-block">
                 <code>
                   {`${resultNumber + 1}: ${results[resultNumber]} `}
                   https://crazydare.github.io/crazy-dare/
                 </code>
               </div>
+              <p>
+                <span>NEW: </span>If your post gets 5 likes, play again.
+              </p>
             </motion.div>
           )}
         </AnimatePresence>
