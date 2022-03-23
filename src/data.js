@@ -12,15 +12,15 @@ export const data = [
 ];
 
 export const results = [
-  "Make all your private photos public for 24h.",
-  "Wank on cam in the chatroom.",
-  "Send your password to the 5 above you.",
+  "In the forums, go to HotStuff category, choose one of the first 10 topics and post a photo related to it. Post the link.",
+  "Take a screenshot of your phone's private photo galley and post it.",
+  "Post a photo of your hard cock covered by a sock.",
   "Post full-body (with face) photo totally naked.",
   "Roll two more times and complete the 2 dares.",
-  "Change main profile photo to one fully naked one with face.",
-  "Post a photo showing cock, legs, and socks.",
+  "Upload a video of you pissing and post the link. Face optional.",
+  "Send your Password to all the other 7s above you.",
   "Post your Password",
-  "Post a link to your alt twitter, snapchat or secret drive folder.",
+  "Wank on cam in the chatroom and post a screenshot.",
   "Roll three more times and complete the 3 dares.",
 ];
 
