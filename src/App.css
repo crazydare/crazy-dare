@@ -165,10 +165,4 @@ button {
     color: var(--white) !important;
     width: 100%;
   }
-
-  .code-block {
-    min-height: 4rem;
-    max-width: 37rem;
-    margin-bottom: 2rem;
-  }
 }

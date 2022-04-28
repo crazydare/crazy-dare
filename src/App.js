@@ -14,7 +14,9 @@ function App() {
     <div className="wrapper">
       We have moved to a new page:
       <div className="code-block">
-        https://wheelofdares.netlify.app/custom/5658/
+        <a href="https://wheelofdares.netlify.app/custom/5658/">
+          https://wheelofdares.netlify.app/custom/5658/
+        </a>
       </div>
       <a href="https://wheelofdares.netlify.app/custom/5658/">
         <motion.button
@@ -23,7 +25,7 @@ function App() {
             transition: { type: "spring", stiffness: 600 },
           }}
         >
-          Visit Wheel of Dares
+          Go to website
         </motion.button>
       </a>
     </div>
